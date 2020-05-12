@@ -71,7 +71,7 @@
 // let NumList = prompt(`Enter a sequence of number, separated by ","`);
 // let NumArray = NumList.split(',');
 
-// let s = 100;
+// let s = NumList[0];
 // for (let i = 0; i < NumArray.length; i++){
 //     if(Number(NumArray[i]) < s){
 //         s = Number(NumArray[i])

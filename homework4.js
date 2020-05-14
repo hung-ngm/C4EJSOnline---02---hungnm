@@ -1000,32 +1000,36 @@
 //Exercise 5
 let products = [
     {
-        'Name':'Xiaomi portable charger 20000mah',
-        'Brand':'Xiaomi',
-        'Price':428,
-        'Color':'White',
-        'Category':'Charger',
+        Name:'Xiaomi portable charger 20000mah',
+        Brand:'Xiaomi',
+        Price:428,
+        Color:'White',
+        Category:'Charger',
+        Providers:['Phukienzero','Dientuccc'],
     },
     {
-        'Name':'VSmart Active 1',
-        'Brand':'VSmart',
-        'Price':5487,
-        'Color':'Black',
-        'Category':'Phone',
+        Name:'VSmart Active 1',
+        Brand:'VSmart',
+        Price:5487,
+        Color:'Black',
+        Category:'Phone',
+        Providers:['Tgdd','Ddghn','VhStore']
     },
     {
-        'Name':'IPhone X',
-        'Brand':'Apple',
-        'Price':21490,
-        'Color':'Gray',
-        'Category':'Phone',
+        Name:'IPhone X',
+        Brand:'Apple',
+        Price:21490,
+        Color:'Gray',
+        Category:'Phone',
+        Providers:['Tgdd'],
     },
     {
-        'Name':'Samsung Galaxy A9',
-        'Brand':'Samsung',
-        'Price':8490,
-        'Color':'Blue',
-        'Category':'Phone',
+        Name:'Samsung Galaxy A9',
+        Brand:'Samsung',
+        Price:8490,
+        Color:'Blue',
+        Category:'Phone',
+        Providers: ['Tgdd'],
     },
 ];
 // for (let i = 0; i < products.length; i++){
@@ -1045,8 +1049,10 @@ for (let i = 0; i < products.length; i++){
     if(products[i]['Category'] == Cate){
         console.log(`Name: ${products[i]['Name']}`);
         console.log(`Price: ${products[i]['Price']}`);
-
+        console.log(`Providers: `);
+        console.log(...products[i]['Providers']);
     }
     
 
 };
+

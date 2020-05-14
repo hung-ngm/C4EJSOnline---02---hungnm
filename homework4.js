@@ -973,28 +973,69 @@
 
 
 //Exercise 4
-let DevDict = {
-    'debug':'The process of figuring out why your program has a certain error and how to fix it',
-    'done' : 'When your task is complete, the only thing you have to do is to wait for users to use it (no additional codes or actions needed)',
-    'defect':   `The formal word for 'error'`,
-    'pm': 'The short version of Project Manager, the person in charge of the final result of a project',
-    'ui/ux': 'UI means User Interface, UX means User Experience, are the process to define how your products looks and feel'  
+// let DevDict = {
+//     'debug':'The process of figuring out why your program has a certain error and how to fix it',
+//     'done' : 'When your task is complete, the only thing you have to do is to wait for users to use it (no additional codes or actions needed)',
+//     'defect':   `The formal word for 'error'`,
+//     'pm': 'The short version of Project Manager, the person in charge of the final result of a project',
+//     'ui/ux': 'UI means User Interface, UX means User Experience, are the process to define how your products looks and feel'  
 
-};
+// };
 
-while(true){
-    alert('Hi there, this is dev dictionary');
-    let kw = prompt('Enter a keyword');
-    if (DevDict[kw] == undefined){
-        let ex = prompt(`We could not find your word: ${kw}, leave your explanation`);
-        DevDict[kw] = ex;
-        alert('Done')
-    } else {
-        alert(`${kw}:  ${DevDict[kw]}  `)
-    }
+// while(true){
+//     alert('Hi there, this is dev dictionary');
+//     let kw = prompt('Enter a keyword');
+//     if (DevDict[kw] == undefined){
+//         let ex = prompt(`We could not find your word: ${kw}, leave your explanation`);
+//         DevDict[kw] = ex;
+//         alert('Done')
+//     } else {
+//         alert(`${kw}:  ${DevDict[kw]}  `)
+//     }
  
-    console.log(DevDict);
+//     console.log(DevDict);
 
+// }
+
+//Exercise 5
+let products = [
+    {
+        'Name':'Xiaomi portable charger 20000mah',
+        'Brand':'Xiaomi',
+        'Price':428,
+        'Color':'White',
+        'Category':'Charger',
+    },
+    {
+        'Name':'VSmart Active 1',
+        'Brand':'VSmart',
+        'Price':5487,
+        'Color':'Black',
+        'Category':'Phone',
+    },
+    {
+        'Name':'IPhone X',
+        'Brand':'Apple',
+        'Price':21490,
+        'Color':'Gray',
+        'Category':'Phone',
+    },
+    {
+        'Name':'Samsung Galaxy A9',
+        'Brand':'Samsung',
+        'Price':8490,
+        'Color':'Blue',
+        'Category':'Phone',
+    },
+];
+for (let i = 0; i < products.length; i++){
+    console.log(`#${i+1}. Name: ${products[i]['Name']}`);
+    console.log(`Price: ${products[i]['Price']}`);
 }
+let pos = Number(prompt('Enter product position:'));
+console.log(`Name: ${products[pos - 1]['Name']}`);
+console.log(`Brand: ${products[pos - 1]['Brand']}`);
+console.log(`Price: ${products[pos - 1]['Price']}`);
+console.log(`Color: ${products[pos - 1]['Color']}`);
+console.log(`Category: ${products[pos - 1]['Category']}`);
 
-    

@@ -1028,14 +1028,25 @@ let products = [
         'Category':'Phone',
     },
 ];
-for (let i = 0; i < products.length; i++){
-    console.log(`#${i+1}. Name: ${products[i]['Name']}`);
-    console.log(`Price: ${products[i]['Price']}`);
-}
-let pos = Number(prompt('Enter product position:'));
-console.log(`Name: ${products[pos - 1]['Name']}`);
-console.log(`Brand: ${products[pos - 1]['Brand']}`);
-console.log(`Price: ${products[pos - 1]['Price']}`);
-console.log(`Color: ${products[pos - 1]['Color']}`);
-console.log(`Category: ${products[pos - 1]['Category']}`);
+// for (let i = 0; i < products.length; i++){
+//     console.log(`#${i+1}. Name: ${products[i]['Name']}`);
+//     console.log(`Price: ${products[i]['Price']}`);
+// }
+// let pos = Number(prompt('Enter product position:'));
+// console.log(`Name: ${products[pos - 1]['Name']}`);
+// console.log(`Brand: ${products[pos - 1]['Brand']}`);
+// console.log(`Price: ${products[pos - 1]['Price']}`);
+// console.log(`Color: ${products[pos - 1]['Color']}`);
+// console.log(`Category: ${products[pos - 1]['Category']}`);
 
+//5.3
+let Cate = prompt('Enter your category?');
+for (let i = 0; i < products.length; i++){
+    if(products[i]['Category'] == Cate){
+        console.log(`Name: ${products[i]['Name']}`);
+        console.log(`Price: ${products[i]['Price']}`);
+
+    }
+    
+
+};

@@ -981,12 +981,20 @@ let DevDict = {
     'ui/ux': 'UI means User Interface, UX means User Experience, are the process to define how your products looks and feel'  
 
 };
-alert('Hi there, this is dev dictionary');
-let kw = prompt('Enter a keyword');
-if (DevDict[kw] == undefined){
-    alert(`We could not find your word: ${kw}`);
-} else {
-    alert(`${kw}:  ${DevDict[kw]}  `)
+
+while(true){
+    alert('Hi there, this is dev dictionary');
+    let kw = prompt('Enter a keyword');
+    if (DevDict[kw] == undefined){
+        let ex = prompt(`We could not find your word: ${kw}, leave your explanation`);
+        DevDict[kw] = ex;
+        alert('Done')
+    } else {
+        alert(`${kw}:  ${DevDict[kw]}  `)
+    }
+ 
+    console.log(DevDict);
+
 }
-        
+
     

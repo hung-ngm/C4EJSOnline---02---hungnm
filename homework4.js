@@ -2223,4 +2223,6 @@ let jobData =
     ]
 };
 
-console.log(jobData.hits[0]);
+// console.log(jobData.hits);
+// console.log(jobData.hits[0]);
+console.log(jobData.hits[0].jobTitle);

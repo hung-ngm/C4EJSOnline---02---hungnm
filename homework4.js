@@ -1138,13 +1138,31 @@
 // }
 
 //Exercise 7
-const pos = {
-    x: 200,
+// const pos = {
+//     x: 200,
+//     y: 50,
+// };
+// clear();
+// penup();
+// rt(90);
+// fd(pos.x);
+// lt(90);
+// fd(pos.y);
+
+//Exercise 8
+const square = {
+    x: 100,
     y: 50,
+    width: 20,
 };
 clear();
 penup();
 rt(90);
-fd(pos.x);
+fd(square.x);
 lt(90);
-fd(pos.y);
+fd(square.y);
+pendown();
+for(let i = 0; i < 4; i++){
+  fd(square.width);
+  rt(90);
+}

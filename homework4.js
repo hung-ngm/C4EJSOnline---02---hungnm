@@ -2231,7 +2231,16 @@ let jobData =
 // console.log(jobData.hits[0].benefits);
 
 //Exercise 15.5
-console.log('First job hit benefit');
-for(let i = 0; i < jobData.hits[0].benefits.length; i++){
-    console.log(jobData.hits[0].benefits[i].benefitValue);
+// console.log('First job hit benefit');
+
+
+//Exercise 15.6
+for(let j = 0; j < jobData.hits.length; j++){
+    console.log(jobData.hits[j].jobTitle);
+    console.log('Benefits:')
+    for(let i = 0; i < jobData.hits[j].benefits.length; i++){
+        console.log(jobData.hits[j].benefits[i].benefitValue);
+    }
 }
+
+

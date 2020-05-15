@@ -1099,3 +1099,40 @@ for (let i = 0; i < FrontEndCareer.length; i++){
     console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
     console.log(`Complete: ${FrontEndCareer[i].Complete}`);
 }
+let task = prompt('Enter your command (New, Delete, Update, Complete)');
+let Userprompt1;
+let Userprompt2
+let a = {
+    Complete: false,
+};
+switch(task){
+    case('New'):
+        Userprompt1 = prompt('Enter new task: ');
+        a.SkillName = Userprompt 
+        FrontEndCareer.push(a);
+        break;
+    
+    case('Update'):
+        Userprompt1 = Number(prompt('Enter position'));
+        Userprompt2 = prompt('Enter new title');
+        FrontEndCareer[Userprompt1 - 1].SkillName = Userprompt2;
+        break;
+    
+    case('Complete'):
+        Userprompt1 = Number(prompt('Enter position'));
+        FrontEndCareer[Userprompt1 - 1].Complete = true;
+        break;
+    
+    case('Delete'):
+        Userprompt1 = Number(prompt('Enter position'));
+        FrontEndCareer.splice(Userprompt1 - 1,1);
+        break;
+        
+
+        
+};
+console.log('Hi there, this is your learning tasks to front-end developer career');
+for (let i = 0; i < FrontEndCareer.length; i++){
+    console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
+    console.log(`Complete: ${FrontEndCareer[i].Complete}`);
+}

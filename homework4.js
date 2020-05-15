@@ -1057,15 +1057,45 @@ let products = [
 // };
 
 
-let prov = prompt('Enter provider');
-for (let i = 0; i < products.length; i++){
-    if(products[i]['Providers'].indexOf(prov) != -1){
-        console.log(`Name: ${products[i]['Name']}`);
-        console.log(`Brand: ${products[i]['Brand']}`);
-        console.log(`Price: ${products[i]['Price']}`);
-        console.log(`Color: ${products[i]['Color']}`);
-        
-        console.log(`Providers: `);
-        console.log(...products[i]['Providers']);
-    }
+//Exercise 5.5
+// let prov = prompt('Enter provider');
+// for (let i = 0; i < products.length; i++){
+//     if(products[i]['Providers'].indexOf(prov) != -1){
+//         console.log(`Name: ${products[i]['Name']}`);
+//         console.log(`Brand: ${products[i]['Brand']}`);
+//         console.log(`Price: ${products[i]['Price']}`);
+//         console.log(`Color: ${products[i]['Color']}`);
+
+//         console.log(`Providers: `);
+//         console.log(...products[i]['Providers']);
+//     }
+// }
+
+//Exercise 6
+let FrontEndCareer = [
+    {
+        SkillName :'HTML',
+        Complete:'false',
+    },
+    {
+        SkillName :'CSS',
+        Complete:'false',
+    },
+    {
+        SkillName :'Basics of Javascript',
+        Complete:'false',
+    },
+    {
+        SkillName :'Node Package Manager (npm)',
+        Complete:'false',
+    },
+    {
+        SkillName : 'Git',
+        Complete:'false',
+    },
+];
+console.log('Hi there, this is your learning tasks to front-end developer career')
+for (let i = 0; i < FrontEndCareer.length; i++){
+    console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
+    console.log(`Complete: ${FrontEndCareer[i].Complete}`);
 }

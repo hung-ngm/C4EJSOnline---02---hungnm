@@ -998,141 +998,153 @@
 // }
 
 //Exercise 5
-let products = [
-    {
-        Name:'Xiaomi portable charger 20000mah',
-        Brand:'Xiaomi',
-        Price:428,
-        Color:'White',
-        Category:'Charger',
-        Providers:['Phukienzero','Dientuccc'],
-    },
-    {
-        Name:'VSmart Active 1',
-        Brand:'VSmart',
-        Price:5487,
-        Color:'Black',
-        Category:'Phone',
-        Providers:['Tgdd','Ddghn','VhStore']
-    },
-    {
-        Name:'IPhone X',
-        Brand:'Apple',
-        Price:21490,
-        Color:'Gray',
-        Category:'Phone',
-        Providers:['Tgdd'],
-    },
-    {
-        Name:'Samsung Galaxy A9',
-        Brand:'Samsung',
-        Price:8490,
-        Color:'Blue',
-        Category:'Phone',
-        Providers: ['Tgdd'],
-    },
-];
-// for (let i = 0; i < products.length; i++){
-//     console.log(`#${i+1}. Name: ${products[i]['Name']}`);
-//     console.log(`Price: ${products[i]['Price']}`);
-// }
-// let pos = Number(prompt('Enter product position:'));
-// console.log(`Name: ${products[pos - 1]['Name']}`);
-// console.log(`Brand: ${products[pos - 1]['Brand']}`);
-// console.log(`Price: ${products[pos - 1]['Price']}`);
-// console.log(`Color: ${products[pos - 1]['Color']}`);
-// console.log(`Category: ${products[pos - 1]['Category']}`);
+// let products = [
+//     {
+//         Name:'Xiaomi portable charger 20000mah',
+//         Brand:'Xiaomi',
+//         Price:428,
+//         Color:'White',
+//         Category:'Charger',
+//         Providers:['Phukienzero','Dientuccc'],
+//     },
+//     {
+//         Name:'VSmart Active 1',
+//         Brand:'VSmart',
+//         Price:5487,
+//         Color:'Black',
+//         Category:'Phone',
+//         Providers:['Tgdd','Ddghn','VhStore']
+//     },
+//     {
+//         Name:'IPhone X',
+//         Brand:'Apple',
+//         Price:21490,
+//         Color:'Gray',
+//         Category:'Phone',
+//         Providers:['Tgdd'],
+//     },
+//     {
+//         Name:'Samsung Galaxy A9',
+//         Brand:'Samsung',
+//         Price:8490,
+//         Color:'Blue',
+//         Category:'Phone',
+//         Providers: ['Tgdd'],
+//     },
+// ];
+// // for (let i = 0; i < products.length; i++){
+// //     console.log(`#${i+1}. Name: ${products[i]['Name']}`);
+// //     console.log(`Price: ${products[i]['Price']}`);
+// // }
+// // let pos = Number(prompt('Enter product position:'));
+// // console.log(`Name: ${products[pos - 1]['Name']}`);
+// // console.log(`Brand: ${products[pos - 1]['Brand']}`);
+// // console.log(`Price: ${products[pos - 1]['Price']}`);
+// // console.log(`Color: ${products[pos - 1]['Color']}`);
+// // console.log(`Category: ${products[pos - 1]['Category']}`);
 
-//5.3
-// let Cate = prompt('Enter your category?');
-// for (let i = 0; i < products.length; i++){
-//     if(products[i]['Category'] == Cate){
-//         console.log(`Name: ${products[i]['Name']}`);
-//         console.log(`Price: ${products[i]['Price']}`);
-//         console.log(`Providers: `);
-//         console.log(...products[i]['Providers']);
-//     }
+// //5.3
+// // let Cate = prompt('Enter your category?');
+// // for (let i = 0; i < products.length; i++){
+// //     if(products[i]['Category'] == Cate){
+// //         console.log(`Name: ${products[i]['Name']}`);
+// //         console.log(`Price: ${products[i]['Price']}`);
+// //         console.log(`Providers: `);
+// //         console.log(...products[i]['Providers']);
+// //     }
     
 
+// // };
+
+
+// //Exercise 5.5
+// // let prov = prompt('Enter provider');
+// // for (let i = 0; i < products.length; i++){
+// //     if(products[i]['Providers'].indexOf(prov) != -1){
+// //         console.log(`Name: ${products[i]['Name']}`);
+// //         console.log(`Brand: ${products[i]['Brand']}`);
+// //         console.log(`Price: ${products[i]['Price']}`);
+// //         console.log(`Color: ${products[i]['Color']}`);
+
+// //         console.log(`Providers: `);
+// //         console.log(...products[i]['Providers']);
+// //     }
+// // }
+
+// //Exercise 6
+// let FrontEndCareer = [
+//     {
+//         SkillName :'HTML',
+//         Complete:'false',
+//     },
+//     {
+//         SkillName :'CSS',
+//         Complete:'false',
+//     },
+//     {
+//         SkillName :'Basics of Javascript',
+//         Complete:'false',
+//     },
+//     {
+//         SkillName :'Node Package Manager (npm)',
+//         Complete:'false',
+//     },
+//     {
+//         SkillName : 'Git',
+//         Complete:'false',
+//     },
+// ];
+// console.log('Hi there, this is your learning tasks to front-end developer career')
+// for (let i = 0; i < FrontEndCareer.length; i++){
+//     console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
+//     console.log(`Complete: ${FrontEndCareer[i].Complete}`);
+// }
+// let task = prompt('Enter your command (New, Delete, Update, Complete)');
+// let Userprompt1;
+// let Userprompt2
+// let a = {
+//     Complete: false,
 // };
+// switch(task){
+//     case('New'):
+//         Userprompt1 = prompt('Enter new task: ');
+//         a.SkillName = Userprompt 
+//         FrontEndCareer.push(a);
+//         break;
+    
+//     case('Update'):
+//         Userprompt1 = Number(prompt('Enter position'));
+//         Userprompt2 = prompt('Enter new title');
+//         FrontEndCareer[Userprompt1 - 1].SkillName = Userprompt2;
+//         break;
+    
+//     case('Complete'):
+//         Userprompt1 = Number(prompt('Enter position'));
+//         FrontEndCareer[Userprompt1 - 1].Complete = true;
+//         break;
+    
+//     case('Delete'):
+//         Userprompt1 = Number(prompt('Enter position'));
+//         FrontEndCareer.splice(Userprompt1 - 1,1);
+//         break;
+        
 
-
-//Exercise 5.5
-// let prov = prompt('Enter provider');
-// for (let i = 0; i < products.length; i++){
-//     if(products[i]['Providers'].indexOf(prov) != -1){
-//         console.log(`Name: ${products[i]['Name']}`);
-//         console.log(`Brand: ${products[i]['Brand']}`);
-//         console.log(`Price: ${products[i]['Price']}`);
-//         console.log(`Color: ${products[i]['Color']}`);
-
-//         console.log(`Providers: `);
-//         console.log(...products[i]['Providers']);
-//     }
+        
+// };
+// console.log('Hi there, this is your learning tasks to front-end developer career');
+// for (let i = 0; i < FrontEndCareer.length; i++){
+//     console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
+//     console.log(`Complete: ${FrontEndCareer[i].Complete}`);
 // }
 
-//Exercise 6
-let FrontEndCareer = [
-    {
-        SkillName :'HTML',
-        Complete:'false',
-    },
-    {
-        SkillName :'CSS',
-        Complete:'false',
-    },
-    {
-        SkillName :'Basics of Javascript',
-        Complete:'false',
-    },
-    {
-        SkillName :'Node Package Manager (npm)',
-        Complete:'false',
-    },
-    {
-        SkillName : 'Git',
-        Complete:'false',
-    },
-];
-console.log('Hi there, this is your learning tasks to front-end developer career')
-for (let i = 0; i < FrontEndCareer.length; i++){
-    console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
-    console.log(`Complete: ${FrontEndCareer[i].Complete}`);
-}
-let task = prompt('Enter your command (New, Delete, Update, Complete)');
-let Userprompt1;
-let Userprompt2
-let a = {
-    Complete: false,
+//Exercise 7
+const pos = {
+    x: 200,
+    y: 50,
 };
-switch(task){
-    case('New'):
-        Userprompt1 = prompt('Enter new task: ');
-        a.SkillName = Userprompt 
-        FrontEndCareer.push(a);
-        break;
-    
-    case('Update'):
-        Userprompt1 = Number(prompt('Enter position'));
-        Userprompt2 = prompt('Enter new title');
-        FrontEndCareer[Userprompt1 - 1].SkillName = Userprompt2;
-        break;
-    
-    case('Complete'):
-        Userprompt1 = Number(prompt('Enter position'));
-        FrontEndCareer[Userprompt1 - 1].Complete = true;
-        break;
-    
-    case('Delete'):
-        Userprompt1 = Number(prompt('Enter position'));
-        FrontEndCareer.splice(Userprompt1 - 1,1);
-        break;
-        
-
-        
-};
-console.log('Hi there, this is your learning tasks to front-end developer career');
-for (let i = 0; i < FrontEndCareer.length; i++){
-    console.log(`${i+1} .  ${FrontEndCareer[i].SkillName}`);
-    console.log(`Complete: ${FrontEndCareer[i].Complete}`);
-}
+clear();
+penup();
+rt(90);
+fd(pos.x);
+lt(90);
+fd(pos.y);

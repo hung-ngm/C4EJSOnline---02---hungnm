@@ -2228,4 +2228,10 @@ let jobData =
 // console.log(jobData.hits[0].jobTitle);
 
 //Exercise 15.4
-console.log(jobData.hits[0].benefits);
+// console.log(jobData.hits[0].benefits);
+
+//Exercise 15.5
+console.log('First job hit benefit');
+for(let i = 0; i < jobData.hits[0].benefits.length; i++){
+    console.log(jobData.hits[0].benefits[i].benefitValue);
+}

@@ -2236,19 +2236,37 @@ let jobData =
 
 //Exercise 15.6
 //Exercise 15.7
-for(let j = 0; j < jobData.hits.length; j++){
-    console.log(`Title: ${jobData.hits[j].jobTitle}`);
-    console.log(`Salary: ${jobData.hits[j].jobSalary}`);
-    console.log(`Locations: ${jobData.hits[j].locations}`);
-    console.log('Benefits:')
-    for(let i = 0; i < jobData.hits[j].benefits.length; i++){
-        console.log(jobData.hits[j].benefits[i].benefitValue);
-    }
-    console.log('Skills: ')
-    for(let l = 0; l < jobData.hits[j].skills.length; l++){
-        console.log(jobData.hits[j].skills[l]);
-    }
+// for(let j = 0; j < jobData.hits.length; j++){
+//     console.log(`Title: ${jobData.hits[j].jobTitle}`);
+//     console.log(`Salary: ${jobData.hits[j].jobSalary}`);
+//     console.log(`Locations: ${jobData.hits[j].locations}`);
+//     console.log('Benefits:')
+//     for(let i = 0; i < jobData.hits[j].benefits.length; i++){
+//         console.log(jobData.hits[j].benefits[i].benefitValue);
+//     }
+//     console.log('Skills: ')
+//     for(let l = 0; l < jobData.hits[j].skills.length; l++){
+//         console.log(jobData.hits[j].skills[l]);
+//     }
 
-}
+// }
+
+//Exercise 16
+const oldData = {
+    firedRice: {
+    Price: 30,
+    vnName: 'Com rang dua bo',
+    },
+    noodle: {
+    price: 20,
+    vnName: 'My tom chanh',
+    },
+    pho: {
+    price: 35,
+    vnName: 'Pho bo tai chin',
+    },
+};
+const{ noodle,...newData} = oldData;
+console.log(newData);
 
 

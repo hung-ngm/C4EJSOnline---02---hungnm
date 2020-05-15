@@ -2235,12 +2235,20 @@ let jobData =
 
 
 //Exercise 15.6
+//Exercise 15.7
 for(let j = 0; j < jobData.hits.length; j++){
-    console.log(jobData.hits[j].jobTitle);
+    console.log(`Title: ${jobData.hits[j].jobTitle}`);
+    console.log(`Salary: ${jobData.hits[j].jobSalary}`);
+    console.log(`Locations: ${jobData.hits[j].locations}`);
     console.log('Benefits:')
     for(let i = 0; i < jobData.hits[j].benefits.length; i++){
         console.log(jobData.hits[j].benefits[i].benefitValue);
     }
+    console.log('Skills: ')
+    for(let l = 0; l < jobData.hits[j].skills.length; l++){
+        console.log(jobData.hits[j].skills[l]);
+    }
+
 }
 
 

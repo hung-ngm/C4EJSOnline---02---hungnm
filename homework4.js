@@ -1044,15 +1044,28 @@ let products = [
 // console.log(`Category: ${products[pos - 1]['Category']}`);
 
 //5.3
-let Cate = prompt('Enter your category?');
+// let Cate = prompt('Enter your category?');
+// for (let i = 0; i < products.length; i++){
+//     if(products[i]['Category'] == Cate){
+//         console.log(`Name: ${products[i]['Name']}`);
+//         console.log(`Price: ${products[i]['Price']}`);
+//         console.log(`Providers: `);
+//         console.log(...products[i]['Providers']);
+//     }
+    
+
+// };
+
+
+let prov = prompt('Enter provider');
 for (let i = 0; i < products.length; i++){
-    if(products[i]['Category'] == Cate){
+    if(products[i]['Providers'].indexOf(prov) != -1){
         console.log(`Name: ${products[i]['Name']}`);
+        console.log(`Brand: ${products[i]['Brand']}`);
         console.log(`Price: ${products[i]['Price']}`);
+        console.log(`Color: ${products[i]['Color']}`);
+        
         console.log(`Providers: `);
         console.log(...products[i]['Providers']);
     }
-    
-
-};
-
+}

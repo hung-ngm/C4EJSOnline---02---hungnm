@@ -1,0 +1,21 @@
+nav{
+    background-color: #D5B0AC;
+}
+
+span{
+    width:100px;
+    height: 30px;
+    margin: 20px 20px;
+    color: #402E2A;
+    font-weight: bold;
+
+}
+
+div{
+    text-align: center;
+}
+
+#Item2:hover{
+    color: #ffffff;
+    background-color: #9CD08F;
+}

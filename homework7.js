@@ -15,3 +15,9 @@ console.log(liContainer);
 for(let i = 0; i < liContainer.length; i++){
     console.log(liContainer[i]);
 }
+
+//Exercise 5
+const classContainer = document.getElementsByClassName('singer');
+for(let i = 0; i < classContainer.length; i++){
+    console.log(classContainer[i]);
+}
